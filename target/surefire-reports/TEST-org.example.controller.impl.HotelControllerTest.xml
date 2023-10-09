@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.controller.impl.HotelControllerTest" time="11.8" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel\target\test-classes;C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel\target\classes;C:\Users\magnu\.m2\repository\io\javalin\javalin-bundle\5.6.1\javalin-bundle-5.6.1.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin\5.6.1\javalin-5.6.1.jar;C:\Users\magnu\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-server\11.0.15\jetty-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-http\11.0.15\jetty-http-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.15\jetty-webapp-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.15\jetty-servlet-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-security\11.0.15\jetty-security-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.15\jetty-xml-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.15\websocket-jetty-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.15\websocket-jetty-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.15\websocket-core-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.15\websocket-servlet-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.15\websocket-core-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-annotations\11.0.15\jetty-annotations-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-plus\11.0.15\jetty-plus-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-jndi\11.0.15\jetty-jndi-11.0.15.jar;C:\Users\magnu\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.15\websocket-jetty-api-11.0.15.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin-testtools\5.6.1\javalin-testtools-5.6.1.jar;C:\Users\magnu\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\magnu\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\magnu\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin-micrometer\5.6.1\javalin-micrometer-5.6.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-core\1.10.1\micrometer-core-1.10.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-commons\1.10.1\micrometer-commons-1.10.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-observation\1.10.1\micrometer-observation-1.10.1.jar;C:\Users\magnu\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\magnu\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-jetty11\1.10.1\micrometer-jetty11-1.10.1.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.15.0\jackson-module-kotlin-2.15.0.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.5.32\kotlin-reflect-1.5.32.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.11.0\brotli4j-1.11.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\service\1.11.0\service-1.11.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.11.0\native-windows-x86_64-1.11.0.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.15\http2-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.15\http2-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.15\http2-hpack-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.15\jetty-alpn-conscrypt-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.15\jetty-alpn-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-io\11.0.15\jetty-io-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-util\11.0.15\jetty-util-11.0.15.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.8.21\kotlin-stdlib-common-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\magnu\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\magnu\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\magnu\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\magnu\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\magnu\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\magnu\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\magnu\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\magnu\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\magnu\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\magnu\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\magnu\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\magnu\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\magnu\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\magnu\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\magnu\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\magnu\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\magnu\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\magnu\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\magnu\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\magnu\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\magnu\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\magnu\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\magnu\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\magnu\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\magnu\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\magnu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\magnu\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\magnu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\magnu\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\magnu\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\magnu\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\magnu\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\magnu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\magnu\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\magnu\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\magnu\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\magnu\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\magnu\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\magnu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\magnu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\magnu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\magnu\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\magnu\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\magnu\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\magnu\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\magnu\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\magnu\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\magnu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\magnu\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\magnu\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\magnu\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\magnu\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\magnu\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\magnu\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\magnu\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\magnu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\magnu\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="user.country.format" value="DK"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\magnu\.jdks\openjdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\magnu\AppData\Local\Temp\surefire5346083656916791659\surefirebooter-20231009104845864_3.jar C:\Users\magnu\AppData\Local\Temp\surefire5346083656916791659 2023-10-09T10-48-45_170-jvmRun1 surefire-20231009104845864_1tmp surefire_0-20231009104845864_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel\target\test-classes;C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel\target\classes;C:\Users\magnu\.m2\repository\io\javalin\javalin-bundle\5.6.1\javalin-bundle-5.6.1.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin\5.6.1\javalin-5.6.1.jar;C:\Users\magnu\.m2\repository\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-server\11.0.15\jetty-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-http\11.0.15\jetty-http-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.15\jetty-webapp-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.15\jetty-servlet-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-security\11.0.15\jetty-security-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.15\jetty-xml-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.15\websocket-jetty-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.15\websocket-jetty-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.15\websocket-core-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.15\websocket-servlet-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.15\websocket-core-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-annotations\11.0.15\jetty-annotations-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-plus\11.0.15\jetty-plus-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-jndi\11.0.15\jetty-jndi-11.0.15.jar;C:\Users\magnu\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\magnu\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.15\websocket-jetty-api-11.0.15.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin-testtools\5.6.1\javalin-testtools-5.6.1.jar;C:\Users\magnu\.m2\repository\com\squareup\okhttp3\okhttp\4.11.0\okhttp-4.11.0.jar;C:\Users\magnu\.m2\repository\com\squareup\okio\okio\3.2.0\okio-3.2.0.jar;C:\Users\magnu\.m2\repository\com\squareup\okio\okio-jvm\3.2.0\okio-jvm-3.2.0.jar;C:\Users\magnu\.m2\repository\io\javalin\javalin-micrometer\5.6.1\javalin-micrometer-5.6.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-core\1.10.1\micrometer-core-1.10.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-commons\1.10.1\micrometer-commons-1.10.1.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-observation\1.10.1\micrometer-observation-1.10.1.jar;C:\Users\magnu\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\magnu\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\magnu\.m2\repository\io\micrometer\micrometer-jetty11\1.10.1\micrometer-jetty11-1.10.1.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\module\jackson-module-kotlin\2.15.0\jackson-module-kotlin-2.15.0.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.5.32\kotlin-reflect-1.5.32.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.11.0\brotli4j-1.11.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\service\1.11.0\service-1.11.0.jar;C:\Users\magnu\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.11.0\native-windows-x86_64-1.11.0.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-server\11.0.15\http2-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-common\11.0.15\http2-common-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\http2\http2-hpack\11.0.15\http2-hpack-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-alpn-conscrypt-server\11.0.15\jetty-alpn-conscrypt-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\conscrypt\conscrypt-openjdk-uber\2.5.2\conscrypt-openjdk-uber-2.5.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-alpn-server\11.0.15\jetty-alpn-server-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-io\11.0.15\jetty-io-11.0.15.jar;C:\Users\magnu\.m2\repository\org\eclipse\jetty\jetty-util\11.0.15\jetty-util-11.0.15.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.8.21\kotlin-stdlib-jdk8-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.8.21\kotlin-stdlib-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.8.21\kotlin-stdlib-common-1.8.21.jar;C:\Users\magnu\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.8.21\kotlin-stdlib-jdk7-1.8.21.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\magnu\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\magnu\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\magnu\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\magnu\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\magnu\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\magnu\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\magnu\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\magnu\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\magnu\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\magnu\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\magnu\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\magnu\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\magnu\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\magnu\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\magnu\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\magnu\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\magnu\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\magnu\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\magnu\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\magnu\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\magnu\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\magnu\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\magnu\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\magnu\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\magnu\.m2\repository\org\hibernate\orm\hibernate-hikaricp\6.2.4.Final\hibernate-hikaricp-6.2.4.Final.jar;C:\Users\magnu\.m2\repository\ch\qos\logback\logback-classic\1.4.7\logback-classic-1.4.7.jar;C:\Users\magnu\.m2\repository\ch\qos\logback\logback-core\1.4.7\logback-core-1.4.7.jar;C:\Users\magnu\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\magnu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\magnu\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\magnu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\magnu\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\magnu\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\magnu\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\magnu\.m2\repository\org\testcontainers\testcontainers\1.18.0\testcontainers-1.18.0.jar;C:\Users\magnu\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\magnu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\magnu\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\magnu\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-api\3.3.0\docker-java-api-3.3.0.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.0\docker-java-transport-zerodep-3.3.0.jar;C:\Users\magnu\.m2\repository\com\github\docker-java\docker-java-transport\3.3.0\docker-java-transport-3.3.0.jar;C:\Users\magnu\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\magnu\.m2\repository\org\testcontainers\postgresql\1.18.0\postgresql-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\jdbc\1.18.0\jdbc-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\database-commons\1.18.0\database-commons-1.18.0.jar;C:\Users\magnu\.m2\repository\org\testcontainers\junit-jupiter\1.18.0\junit-jupiter-1.18.0.jar;C:\Users\magnu\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\magnu\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\magnu\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\magnu\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\magnu\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\magnu\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\magnu\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\magnu\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\magnu\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\magnu\.m2\repository\io\rest-assured\json-schema-validator\5.3.0\json-schema-validator-5.3.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\magnu\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\magnu\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\magnu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\magnu\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\magnu\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\magnu\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\magnu\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\magnu\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\magnu\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\magnu\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\magnu\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\magnu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\magnu\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\magnu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-09-19"/>
+    <property name="java.home" value="C:\Users\magnu\.jdks\openjdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\magnu\AppData\Local\Temp\surefire5346083656916791659\surefirebooter-20231009104845864_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21+35-2513"/>
+    <property name="user.name" value="magnu"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\magnu\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="jetty.git.hash" value="5bc5e562c8d05c5862505aebe5cf83a61bdbcb96"/>
+    <property name="java.io.tmpdir" value="C:\Users\magnu\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.2.2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21"/>
+    <property name="user.dir" value="C:\Users\magnu\Documents\Class\Semester 3\Week8\Dat3-Week8-Hotel"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\magnu\.jdks\openjdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Java\jdk1.8.0_341\bin;C:\Users\magnu\AppData\Local\Microsoft\WindowsApps;C:\Users\magnu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\magnu\AppData\Local\GitHubDesktop\bin;C:\msys64\mingw64\bin;C:\Users\magnu\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21+35-2513"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="create" classname="org.example.controller.impl.HotelControllerTest" time="2.439">
+    <system-out><![CDATA[10:48:46,530 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.7
+10:48:46,547 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+10:48:46,549 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/magnu/Documents/Class/Semester%203/Week8/Dat3-Week8-Hotel/target/classes/logback.xml]
+10:48:46,550 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@7cbd9d24 - Resource [logback.xml] occurs multiple times on the classpath.
+10:48:46,550 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@7cbd9d24 - Resource [logback.xml] occurs at [jar:file:/C:/Users/magnu/.m2/repository/io/javalin/javalin-bundle/5.6.1/javalin-bundle-5.6.1.jar!/logback.xml]
+10:48:46,550 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@7cbd9d24 - Resource [logback.xml] occurs at [file:/C:/Users/magnu/Documents/Class/Semester%203/Week8/Dat3-Week8-Hotel/target/classes/logback.xml]
+10:48:46,620 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1696841326618)
+10:48:46,620 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - No 'scanPeriod' specified. Defaulting to 1 minutes
+10:48:46,620 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Will scan for changes in [file:/C:/Users/magnu/Documents/Class/Semester%203/Week8/Dat3-Week8-Hotel/target/classes/logback.xml] 
+10:48:46,620 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+10:48:46,623 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+10:48:46,623 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:48:46,627 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:48:46,651 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+10:48:46,651 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+10:48:46,655 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:48:46,662 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@376635015 - setting totalSizeCap to 10 MB
+10:48:46,663 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@376635015 - Will use gz compression
+10:48:46,664 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@376635015 - Will use the pattern src/main/resources/logs/application.%d{yyyy-MM-dd} for the active file
+10:48:46,670 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'src/main/resources/logs/application.%d{yyyy-MM-dd}.gz'.
+10:48:46,670 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+10:48:46,670 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2023-10-09T08:12:43.748Z
+10:48:46,674 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: src/main/resources/logs/application.log
+10:48:46,674 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [src/main/resources/logs/application.log]
+10:48:46,675 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [dk.lyngby] to INFO
+10:48:46,678 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [dk.lyngby] to false
+10:48:46,678 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[dk.lyngby]
+10:48:46,678 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[dk.lyngby]
+10:48:46,678 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+10:48:46,678 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+10:48:46,678 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@5026735c - End of configuration.
+10:48:46,679 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1b45c0e - Registering current configuration as safe fallback point
+
+2023-10-09 10:48:46,726 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.Version&amp#27;[0;39m - &amp#27;[32mHHH000412: Hibernate ORM core version 6.2.4.Final
+&amp#27;[0;39m2023-10-09 10:48:46,729 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.hibernate.cfg.Environment&amp#27;[0;39m - &amp#27;[32mHHH000406: Using bytecode reflection optimizer
+&amp#27;[0;39mHibernate Java Config serviceRegistry created
+2023-10-09 10:48:46,925 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Starting...
+&amp#27;[0;39m2023-10-09 10:48:46,979 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.t.u.TestcontainersConfiguration&amp#27;[0;39m - &amp#27;[32mAttempted to read Testcontainers configuration file at file:/C:/Users/magnu/.testcontainers.properties but the file was not found. Exception message: FileNotFoundException: C:\Users\magnu\.testcontainers.properties (The system cannot find the file specified)
+&amp#27;[0;39m2023-10-09 10:48:46,982 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.ImageNameSubstitutor&amp#27;[0;39m - &amp#27;[32mImage name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+&amp#27;[0;39m2023-10-09 10:48:47,441 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.d.DockerClientProviderStrategy&amp#27;[0;39m - &amp#27;[32mFound Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+&amp#27;[0;39m2023-10-09 10:48:47,449 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mDocker host IP address is localhost
+&amp#27;[0;39m2023-10-09 10:48:47,465 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mConnected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7870 MB
+&amp#27;[0;39m2023-10-09 10:48:47,496 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling docker image: testcontainers/ryuk:0.4.0. Please be patient; this may take some time but only needs to be done once.
+&amp#27;[0;39m2023-10-09 10:48:48,021 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.RegistryAuthLocator&amp#27;[0;39m - &amp#27;[32mCredential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+&amp#27;[0;39m2023-10-09 10:48:49,635 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mStarting to pull image
+&amp#27;[0;39m2023-10-09 10:48:49,652 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+&amp#27;[0;39m2023-10-09 10:48:50,478 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  2 pending,  1 downloaded,  0 extracted, (58 KB/? MB)
+&amp#27;[0;39m2023-10-09 10:48:50,765 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  1 pending,  2 downloaded,  0 extracted, (4 MB/? MB)
+&amp#27;[0;39m2023-10-09 10:48:50,794 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  0 pending,  3 downloaded,  0 extracted, (4 MB/5 MB)
+&amp#27;[0;39m2023-10-09 10:48:50,916 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  0 pending,  3 downloaded,  1 extracted, (4 MB/5 MB)
+&amp#27;[0;39m2023-10-09 10:48:51,041 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  0 pending,  3 downloaded,  2 extracted, (5 MB/5 MB)
+&amp#27;[0;39m2023-10-09 10:48:51,115 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPulling image layers:  0 pending,  3 downloaded,  3 extracted, (5 MB/5 MB)
+&amp#27;[0;39m2023-10-09 10:48:51,146 [docker-java-stream-1392295776] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mPull complete. 3 layers, pulled in 1s (downloaded 5 MB at 5 MB/s)
+&amp#27;[0;39m2023-10-09 10:48:51,170 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mCreating container for image: testcontainers/ryuk:0.4.0
+&amp#27;[0;39m2023-10-09 10:48:51,755 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 is starting: 4c40e80e188d69c7784045b24736fbe46c23807467b2c20c2d0c90a80c65364e
+&amp#27;[0;39m2023-10-09 10:48:52,341 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.testcontainers/ryuk:0.4.0&amp#27;[0;39m - &amp#27;[32mContainer testcontainers/ryuk:0.4.0 started in PT4.8680871S
+&amp#27;[0;39m2023-10-09 10:48:52,346 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.t.utility.RyukResourceReaper&amp#27;[0;39m - &amp#27;[32mRyuk started - will monitor and terminate Testcontainers containers on JVM exit
+&amp#27;[0;39m2023-10-09 10:48:52,346 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32mChecking the system...
+&amp#27;[0;39m2023-10-09 10:48:52,347 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.testcontainers.DockerClientFactory&amp#27;[0;39m - &amp#27;[32m✔︎ Docker server version should be at least 1.6.0
+&amp#27;[0;39m2023-10-09 10:48:52,347 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mCreating container for image: postgres:15.3-alpine3.18
+&amp#27;[0;39m2023-10-09 10:48:52,402 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 is starting: 5aec4403fbc94a5ef2734f55a750229aea7839632fdd1ed606c0e6e98b6dd6bc
+&amp#27;[0;39m2023-10-09 10:48:54,070 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer postgres:15.3-alpine3.18 started in PT1.7227713S
+&amp#27;[0;39m2023-10-09 10:48:54,070 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mtc.postgres:15.3-alpine3.18&amp#27;[0;39m - &amp#27;[32mContainer is started (JDBC URL: jdbc:postgresql://localhost:53846/test?loggerLevel=OFF)
+&amp#27;[0;39m2023-10-09 10:48:54,213 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.pool.HikariPool&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Added connection org.testcontainers.jdbc.ConnectionWrapper@288f173f
+&amp#27;[0;39m2023-10-09 10:48:54,214 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mcom.zaxxer.hikari.HikariDataSource&amp#27;[0;39m - &amp#27;[32mHikariPool-1 - Start completed.
+&amp#27;[0;39m2023-10-09 10:48:54,559 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.h.b.i.BytecodeProviderInitiator&amp#27;[0;39m - &amp#27;[32mHHH000021: Bytecode provider name : bytebuddy
+&amp#27;[0;39m2023-10-09 10:48:55,185 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.h.e.t.j.p.i.JtaPlatformInitiator&amp#27;[0;39m - &amp#27;[32mHHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+&amp#27;[0;39mHibernate: alter table if exists room drop constraint if exists FKdosq3ww4h9m2osim6o0lugng8
+2023-10-09 10:48:55,208 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-10-09 10:48:55,208 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mrelation "room" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists hotel cascade
+2023-10-09 10:48:55,209 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-10-09 10:48:55,210 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "hotel" does not exist, skipping
+&amp#27;[0;39mHibernate: drop table if exists room cascade
+2023-10-09 10:48:55,210 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mSQL Warning Code: 0, SQLState: 00000
+&amp#27;[0;39m2023-10-09 10:48:55,210 [main] &amp#27;[31mWARN &amp#27;[0;39m &amp#27;[36mo.h.e.jdbc.spi.SqlExceptionHelper&amp#27;[0;39m - &amp#27;[32mtable "room" does not exist, skipping
+&amp#27;[0;39mHibernate: create table hotel (hotel_id serial not null, hotel_address varchar(255) not null, hotel_name varchar(255) not null unique, hotel_type varchar(255) not null check (hotel_type in ('BUDGET','STANDARD','LUXURY')), primary key (hotel_id))
+Hibernate: create table room (hotel_id integer not null, price numeric(38,2) not null, room_id serial not null, room_number integer not null, room_type varchar(255) not null check (room_type in ('SINGLE','DOUBLE','SUITE')), primary key (room_id))
+Hibernate: alter table if exists room add constraint FKdosq3ww4h9m2osim6o0lugng8 foreign key (hotel_id) references hotel
+Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:55,601 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:55,679 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21+35-2513
+&amp#27;[0;39m2023-10-09 10:48:55,707 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-10-09 10:48:55,714 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@7d7a8d23{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-10-09 10:48:55,734 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@3987a1e8{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:55,737 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@726d8fa0{STARTING}[11.0.15,sto=0] @9777ms
+&amp#27;[0;39m2023-10-09 10:48:55,737 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-10-09 10:48:55,737 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYour JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+&amp#27;[0;39m2023-10-09 10:48:55,739 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-10-09 10:48:55,747 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 108 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-10-09 10:48:55,747 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 147ms \o/
+&amp#27;[0;39mHibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:57,664 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStopping Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:57,664 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStopped Server@726d8fa0{STOPPING}[11.0.15,sto=0]
+&amp#27;[0;39m2023-10-09 10:48:57,669 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStopped ServerConnector@3987a1e8{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:57,671 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStopped i.j.j.@7d7a8d23{/api/v1,null,STOPPED}
+&amp#27;[0;39m2023-10-09 10:48:57,671 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin has stopped
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="delete" classname="org.example.controller.impl.HotelControllerTest" time="0.255">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:57,697 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:57,699 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21+35-2513
+&amp#27;[0;39m2023-10-09 10:48:57,700 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-10-09 10:48:57,700 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@55d607b{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-10-09 10:48:57,707 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@2ff9a06{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:57,707 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@4bb05a4e{STARTING}[11.0.15,sto=0] @11749ms
+&amp#27;[0;39m2023-10-09 10:48:57,707 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-10-09 10:48:57,707 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYour JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+&amp#27;[0;39m2023-10-09 10:48:57,708 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-10-09 10:48:57,708 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 108 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-10-09 10:48:57,708 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 11ms \o/
+&amp#27;[0;39mHibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from room where room_id=?
+Hibernate: delete from hotel where hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+2023-10-09 10:48:57,928 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStopping Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:57,928 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStopped Server@4bb05a4e{STOPPING}[11.0.15,sto=0]
+&amp#27;[0;39m2023-10-09 10:48:57,930 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStopped ServerConnector@2ff9a06{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:57,930 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStopped i.j.j.@55d607b{/api/v1,null,STOPPED}
+&amp#27;[0;39m2023-10-09 10:48:57,931 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin has stopped
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="update" classname="org.example.controller.impl.HotelControllerTest" time="0.134">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:57,959 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:57,960 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21+35-2513
+&amp#27;[0;39m2023-10-09 10:48:57,962 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-10-09 10:48:57,963 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@5b34e7bd{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-10-09 10:48:57,969 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@4d2068ea{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@5145dddc{STARTING}[11.0.15,sto=0] @12010ms
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYour JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 108 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-10-09 10:48:57,970 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 11ms \o/
+&amp#27;[0;39mRequest method:	PUT
+Request URI:	http://localhost:7777/api/v1/hotels/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "hotelName": "Bates Motel",
+    "hotelAddress": "Lyngby",
+    "hotelType": "LUXURY",
+    "rooms": [
+        
+    ]
+}
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: update hotel set hotel_address=?,hotel_name=?,hotel_type=? where hotel_id=?
+2023-10-09 10:48:58,065 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStopping Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:58,065 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStopped Server@5145dddc{STOPPING}[11.0.15,sto=0]
+&amp#27;[0;39m2023-10-09 10:48:58,067 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStopped ServerConnector@4d2068ea{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:58,067 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStopped i.j.j.@5b34e7bd{/api/v1,null,STOPPED}
+&amp#27;[0;39m2023-10-09 10:48:58,067 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin has stopped
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="read" classname="org.example.controller.impl.HotelControllerTest" time="0.061">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:58,091 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:58,092 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21+35-2513
+&amp#27;[0;39m2023-10-09 10:48:58,093 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-10-09 10:48:58,094 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@30e29c0c{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@71c45428{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@2c7fb24c{STARTING}[11.0.15,sto=0] @12141ms
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYour JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-10-09 10:48:58,100 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 108 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-10-09 10:48:58,102 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 9ms \o/
+&amp#27;[0;39mHibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+Hibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type,r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from hotel h1_0 left join room r1_0 on h1_0.hotel_id=r1_0.hotel_id where h1_0.hotel_id=?
+2023-10-09 10:48:58,126 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStopping Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:58,126 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStopped Server@2c7fb24c{STOPPING}[11.0.15,sto=0]
+&amp#27;[0;39m2023-10-09 10:48:58,127 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStopped ServerConnector@71c45428{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:58,129 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStopped i.j.j.@30e29c0c{/api/v1,null,STOPPED}
+&amp#27;[0;39m2023-10-09 10:48:58,129 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin has stopped
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+  <testcase name="readAll" classname="org.example.controller.impl.HotelControllerTest" time="0.159">
+    <system-out><![CDATA[Hibernate: delete from room
+Hibernate: delete from hotel
+Hibernate: ALTER SEQUENCE room_room_id_seq RESTART WITH 1
+Hibernate: ALTER SEQUENCE hotel_hotel_id_seq RESTART WITH 1
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into hotel (hotel_address,hotel_name,hotel_type) values (?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+Hibernate: insert into room (hotel_id,room_number,price,room_type) values (?,?,?,?)
+2023-10-09 10:48:58,162 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStarting Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:58,162 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mjetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21+35-2513
+&amp#27;[0;39m2023-10-09 10:48:58,164 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.s.s.DefaultSessionIdManager&amp#27;[0;39m - &amp#27;[32mSession workerName=node0
+&amp#27;[0;39m2023-10-09 10:48:58,165 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStarted i.j.j.@79753f20{/api/v1,null,AVAILABLE}
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStarted ServerConnector@142dbf1a{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStarted Server@798ceea2{STARTING}[11.0.15,sto=0] @12213ms
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32m
+       __                  ___          ______
+      / /___ __   ______ _/ (_)___     / ____/
+ __  / / __ `/ | / / __ `/ / / __ \   /___ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /  ____/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/  /_____/
+
+       https://javalin.io/documentation
+
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYour JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mListening on http://localhost:7777/api/v1
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mYou are running Javalin 5.6.1 (released June 22, 2023. Your Javalin version is 108 days old. Consider checking for a newer version.).
+&amp#27;[0;39m2023-10-09 10:48:58,172 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin started in 11ms \o/
+&amp#27;[0;39mHibernate: select h1_0.hotel_id,h1_0.hotel_address,h1_0.hotel_name,h1_0.hotel_type from hotel h1_0
+Hibernate: select r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from room r1_0 where r1_0.hotel_id=?
+Hibernate: select r1_0.hotel_id,r1_0.room_id,r1_0.room_number,r1_0.price,r1_0.room_type from room r1_0 where r1_0.hotel_id=?
+2023-10-09 10:48:58,284 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mStopping Javalin ...
+&amp#27;[0;39m2023-10-09 10:48:58,284 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36morg.eclipse.jetty.server.Server&amp#27;[0;39m - &amp#27;[32mStopped Server@798ceea2{STOPPING}[11.0.15,sto=0]
+&amp#27;[0;39m2023-10-09 10:48:58,287 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.jetty.server.AbstractConnector&amp#27;[0;39m - &amp#27;[32mStopped ServerConnector@142dbf1a{HTTP/1.1, (http/1.1)}{0.0.0.0:7777}
+&amp#27;[0;39m2023-10-09 10:48:58,287 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.e.j.server.handler.ContextHandler&amp#27;[0;39m - &amp#27;[32mStopped i.j.j.@79753f20{/api/v1,null,STOPPED}
+&amp#27;[0;39m2023-10-09 10:48:58,287 [main] &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mio.javalin.Javalin&amp#27;[0;39m - &amp#27;[32mJavalin has stopped
+&amp#27;[0;39m]]></system-out>
+  </testcase>
+</testsuite>
