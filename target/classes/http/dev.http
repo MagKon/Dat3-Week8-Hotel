@@ -1,0 +1,54 @@
+// Hotel API
+
+GET {{url}}/hotels
+
+###
+
+GET {{url}}/hotels/6
+
+###
+
+POST {{url}}/hotels
+Content-Type: application/json
+
+{
+  "hotelName": "Holiday Inn",
+  "hotelAddress": "Stuttgart",
+  "hotelType": "STANDARD"
+}
+
+###
+
+PUT {{url}}/hotels/4
+Content-Type: application/json
+
+{
+  "hotelName": "Ritz Carlton",
+  "hotelAddress": "London City",
+  "hotelType": "LUXURY"
+}
+
+###
+
+DELETE {{url}}/hotels/5
+
+###
+
+// Room API
+
+GET {{url}}/rooms
+
+###
+
+GET {{url}}/rooms/1
+
+###
+
+POST {{url}}/rooms/hotel/3
+Content-Type: application/json
+
+{
+  "roomNumber": 11,
+  "roomPrice": 1150,
+  "roomType": "SINGLE"
+}
