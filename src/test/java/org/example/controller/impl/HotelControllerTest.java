@@ -11,10 +11,7 @@ import io.restassured.http.ContentType;
 import jakarta.persistence.EntityManagerFactory;
 import org.eclipse.jetty.http.HttpStatus;
 import org.jetbrains.annotations.NotNull;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -40,6 +37,9 @@ class HotelControllerTest
         HibernateConfig.setTest(true);
         emfTest = HibernateConfig.getEntityManagerFactory();
         hotelController = new HotelController();
+
+        app = Javalin.create();
+        ApplicationConfig.startServer(app, 7777);
     }
 
     @BeforeEach
@@ -65,14 +65,11 @@ class HotelControllerTest
             em.persist(h1);
             em.persist(h2);
             em.getTransaction().commit();
-
-            app = Javalin.create();
-            ApplicationConfig.startServer(app, 7777);
         }
     }
 
-    @AfterEach
-    void tearDown()
+    @AfterAll
+    static void tearDown()
     {
         HibernateConfig.setTest(false);
         ApplicationConfig.stopServer(app);
@@ -182,7 +179,7 @@ class HotelControllerTest
     }
 
     @NotNull
-    private static Set<Room> getCalRooms()
+    static Set<Room> getCalRooms()
     {
         Room r100 = new Room(100, new BigDecimal(2520), Room.RoomType.SINGLE);
         Room r101 = new Room(101, new BigDecimal(2520), Room.RoomType.SINGLE);
@@ -196,7 +193,7 @@ class HotelControllerTest
     }
 
     @NotNull
-    private static Set<Room> getBatesRooms()
+    static Set<Room> getBatesRooms()
     {
         Room r111 = new Room(111, new BigDecimal(2520), Room.RoomType.SINGLE);
         Room r112 = new Room(112, new BigDecimal(2520), Room.RoomType.SINGLE);
