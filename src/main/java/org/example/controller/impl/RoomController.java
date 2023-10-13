@@ -27,10 +27,13 @@ public class RoomController implements IController<Room, Integer> {
     public void read(Context ctx) {
         // request
         int id = ctx.pathParamAsClass("id", Integer.class).check(this::validatePrimaryKey, "Not a valid id").get();
+
         // entity
         Room room = dao.read(id);
+
         // dto
         RoomDto roomDto = new RoomDto(room);
+
         // response
         ctx.res().setStatus(200);
         ctx.json(roomDto, RoomDto.class);
@@ -39,10 +42,32 @@ public class RoomController implements IController<Room, Integer> {
 
     @Override
     public void readAll(Context ctx) {
-        // entity
-        List<Room> rooms = dao.readAll();
+        List<Room> rooms;
+        if (ctx.queryParam("range") != null) {
+            String[] range = ctx.queryParam("range").split("-");
+            if (range.length == 0) {
+                ctx.res().setStatus(400);
+                ctx.json(new Message(400, "Not a valid range"));
+                return;
+            }
+            else if (range.length == 1) {
+                int startRange = Integer.parseInt(range[0]);
+                rooms = dao.readAll(startRange);
+            }
+            else {
+                int startRange = Integer.parseInt(range[0]);
+                int endRange = Integer.parseInt(range[1]);
+                rooms = dao.readAll(startRange, endRange);
+            }
+        }
+        else {
+            // entity
+             rooms= dao.readAll();
+        }
+
         // dto
         List<RoomDto> roomDtos = RoomDto.toRoomDTOList(rooms);
+
         // response
         ctx.res().setStatus(200);
         ctx.json(roomDtos, RoomDto.class);

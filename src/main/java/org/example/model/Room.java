@@ -28,6 +28,10 @@ public class Room {
     private BigDecimal roomPrice;
 
     @Setter
+    @Column(name = "square_meters", nullable = true)
+    private Double squareMeters;
+
+    @Setter
     @Enumerated(EnumType.STRING)
     @Column(name = "room_type", nullable = false)
     private RoomType roomType;
@@ -37,7 +41,7 @@ public class Room {
     @JoinColumn(name = "hotel_id", nullable = false)
     private Hotel hotel;
 
-    public Room(Integer roomNumber, BigDecimal roomPrice, RoomType roomType) {
+    public Room(Integer roomNumber, BigDecimal roomPrice, RoomType roomType, Double squareMeters) {
         this.roomNumber = roomNumber;
         this.roomPrice = roomPrice;
         this.roomType = roomType;

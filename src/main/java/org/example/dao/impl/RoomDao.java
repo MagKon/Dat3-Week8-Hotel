@@ -51,6 +51,20 @@ public class RoomDao implements IDao<Room, Integer> {
         }
     }
 
+    public List<Room> readAll(int lowerRange) {
+        try (var em = emf.createEntityManager()) {
+            var query = em.createQuery("SELECT r FROM Room r WHERE r.roomPrice <=" + lowerRange, Room.class);
+            return query.getResultList();
+        }
+    }
+
+    public List<Room> readAll(int lowerRange, int upperRange) {
+        try (var em = emf.createEntityManager()) {
+            var query = em.createQuery("SELECT r FROM Room r WHERE r.roomPrice BETWEEN " + lowerRange + " AND " + upperRange, Room.class);
+            return query.getResultList();
+        }
+    }
+
     @Override
     public Room create(Room room) {
         try (var em = emf.createEntityManager()) {
